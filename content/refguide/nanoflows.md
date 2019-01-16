@@ -47,7 +47,7 @@ There are three main differences betweeen nanoflows and microflows:
 
 * When a nanoflow steps through its actions, client actions are directly executed. For example, an open page action immediately opens a page instead of at the end of the nanoflow. This is different from client actions in a microflow, which only run when the client receives the result from the microflow.
 * When used in nanoflow activities, expressions do not support the following variables: `$latestError`, `$latestSoapFault`, `$latestHttpResponse`, `$currentSession`, `$currentUser`, `$currentDeviceType`.
-* Nanoflows are not run inside a transaction, so if an error occurs in a nanoflow, it will not roll back any previous changes.
+* Nanoflows does not run inside a transaction, so if an error occurs in a nanoflow, it will not roll back any previous changes.
 
 ## 4 Keyboard Support
 
