@@ -398,6 +398,7 @@ If your native template is not the latest version, synchronize your repository w
 ### 6.1 GitHub Errors
 
 **Invalid Access Token** — Your access token is invalid. Consult the [GitHub Token](/howto/mobile/deploying-native-app#github-token) section in *How to Deploy Your First Mendix Native App* and provide the access token to Native Builder.
+Also please check your proxy settings, if you are connected through some proxy network, the build will fail.Try to connect with public network and it will work just fine
 
 **Unable to Create the Repository: the Access Token Needs Access to the Repo Scope** — Your access token is valid, but has too few permissions for Native Builder to work. Native Builder clones a template GitHub repository, creates a branch, and commits files. Consult the [GitHub Token](/howto/mobile/deploying-native-app#github-token) section in *How to Deploy Your First Mendix Native App* and provide the new access token to Native Builder.
 
